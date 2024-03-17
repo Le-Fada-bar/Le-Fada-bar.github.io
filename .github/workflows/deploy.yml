@@ -31,5 +31,5 @@ jobs:
         with:
           branch: gh-pages  # Change this to the branch you want to deploy to
           folder: dist  # Change this if your Vue.js build output folder is different
-          token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          token: ${{ secrets.ACTION_DEPLOY_KEY }}
 
