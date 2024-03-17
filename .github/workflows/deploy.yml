@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master  # Change this to the branch you want to deploy from
+permissions: 
+  contents: write
 
 jobs:
   deploy:
