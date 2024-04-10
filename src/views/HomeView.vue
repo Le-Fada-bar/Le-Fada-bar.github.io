@@ -10,8 +10,8 @@ import PictureText from '../components/PictureText.vue'
       <p>This is a long text</p>
     </PictureText>
     <PictureText>
-      <h2>Cave à ami </h2>
-      <h2> Bar à copain </h2>
+      <h2>Concept</h2>
+      <p>This is a long text</p>
       <p>This is a long text</p>
     </PictureText>
   </main>
