@@ -5,5 +5,6 @@
 
 a {
   text-decoration: none;
+  color: var(--theme-black);
   /* color: hsla(160, 100%, 37%, 1); */
 }

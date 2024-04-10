@@ -1,8 +1,18 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
   --theme-white: #ffffff;
-  --theme-black: #f8f8f8;
+  --theme-black: #000000;
 }
 
 body {
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
