@@ -2,9 +2,11 @@
 :root {
   --theme-white: #ffffff;
   --theme-black: #000000;
+  --theme-spacing: 2em;
 }
 
 body {
+  margin: 0;
 }
 
 button, input[type="submit"], input[type="reset"] {
