@@ -47,6 +47,9 @@ export default {
         <div><button @click="toggle" class="burger-menu">{{ menu_inside }}</button></div>
       </div>
       <div>
+        <a href="#" v-if="toggled" @click="close">Réservez</a>
+      </div>
+      <div>
         <RouterLink v-if="toggled" @click="close" to="/menu">Carte</RouterLink>
       </div>
       <div>
