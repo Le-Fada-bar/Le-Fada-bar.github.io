@@ -1,6 +1,7 @@
 <template>
   <footer>
     Instagram
+    Privatiser
   </footer>
 </template>
 
