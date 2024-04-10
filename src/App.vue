@@ -1,8 +1,11 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import Footer from './components/Footer.vue'
 
 export default {
+  components: {
+    Footer
+  },
   data() {
     return {
       toggled: false,
@@ -61,10 +64,11 @@ export default {
       <div>
         <RouterLink v-if="toggled" @click="close" to="/information">Informations</RouterLink>
       </div>
+      <Footer v-if="toggled" />
     </nav>
   </header>
-
   <RouterView />
+  <Footer />
 </template>
 
 <style scoped>
