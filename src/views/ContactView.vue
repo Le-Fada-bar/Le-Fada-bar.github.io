@@ -1,8 +1,21 @@
-<script></script>
+<script>
+import PictureText from '../components/PictureText.vue'
+
+export default {
+  components: { PictureText }
+}
+</script>
 
 <template>
   <div>
-    <h1>This is the Contact vue</h1>
+    <PictureText>
+      <h2>Contactez-nous</h2>
+      <ul>
+        <li> Address</li>
+        <li> Phone</li>
+        <li> Mail</li>
+      </ul>
+    </PictureText>
   </div>
 </template>
 
