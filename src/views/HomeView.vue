@@ -10,6 +10,12 @@ import PictureText from '../components/PictureText.vue'
     </div>
   </video>
   <main>
+    <video autoplay loop muted>
+      <source src="/public/intro.mp4" />
+      <div class="discover">
+        <button>Découvrir</button>
+      </div>
+    </video>
     <PictureText>
       <h2>Cave à ami </h2>
       <h2> Bar à copain </h2>
@@ -24,10 +30,13 @@ import PictureText from '../components/PictureText.vue'
 </template>
 
 <style scoped>
+<<<<<<< HEAD
 main {
   padding: 1em;
 }
 
+=======
+>>>>>>> feat/menu
 video {
   width: 100%;
   height: 100vh;
