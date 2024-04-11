@@ -67,7 +67,7 @@ export default {
       <Footer v-if="toggled" />
     </nav>
   </header>
-  <RouterView />
+  <RouterView style="min-height: 80vh" />
   <Footer />
 </template>
 
