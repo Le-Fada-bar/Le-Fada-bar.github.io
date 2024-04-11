@@ -3,6 +3,12 @@ import PictureText from '../components/PictureText.vue'
 </script>
 
 <template>
+  <video autoplay loop muted>
+    <source src="/intro.mp4" />
+    <div class="discover">
+      <button>Découvrir</button>
+    </div>
+  </video>
   <main>
     <PictureText>
       <h2>Cave à ami </h2>
@@ -17,4 +23,15 @@ import PictureText from '../components/PictureText.vue'
   </main>
 </template>
 
-<style></style>
+<style scoped>
+main {
+  padding: 1em;
+}
+
+video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  pointer-events: none;
+}
+</style>

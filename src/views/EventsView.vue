@@ -7,13 +7,15 @@ export default {
 </script>
 
 <template>
-  <PictureText>
-    <h2>#EVENEMENT</h2>
-    <ul>
-      <li>#DATE</li>
-      <li>#DESCRIPTION</li>
-    </ul>
-  </PictureText>
+  <main>
+    <PictureText>
+      <h2>#EVENEMENT</h2>
+      <ul>
+        <li>#DATE</li>
+        <li>#DESCRIPTION</li>
+      </ul>
+    </PictureText>
+  </main>
 </template>
 
 <style></style>

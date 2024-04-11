@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <main>
     <PictureText>
       <h2>Contactez-nous</h2>
       <ul>
@@ -16,7 +16,7 @@ export default {
         <li> Mail</li>
       </ul>
     </PictureText>
-  </div>
+  </main>
 </template>
 
 <style></style>
