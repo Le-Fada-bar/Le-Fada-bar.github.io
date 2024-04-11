@@ -1,9 +1,19 @@
-<script></script>
+<script>
+import PictureText from '../components/PictureText.vue'
+
+export default {
+  components: { PictureText }
+}
+</script>
 
 <template>
-  <div>
-    <h1>This is the Event vue</h1>
-  </div>
+  <PictureText>
+    <h2>#EVENEMENT</h2>
+    <ul>
+      <li>#DATE</li>
+      <li>#DESCRIPTION</li>
+    </ul>
+  </PictureText>
 </template>
 
 <style></style>
