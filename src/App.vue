@@ -75,7 +75,7 @@ export default {
         <RouterLink to="/" @click="close">Fada</RouterLink>
       </div>
       <div>
-        <a href="#" v-if="toggled" @click="close">Réservez</a>
+        <RouterLink v-if="toggled" @click="close" to="/book">Réservez</RouterLink>
       </div>
       <div>
         <RouterLink v-if="toggled" @click="close" to="/menu">Carte</RouterLink>
