@@ -1,16 +1,14 @@
 <script>
-import PictureText from '../components/PictureText.vue'
+import PictureButton from '../components/PictureButton.vue'
 
 export default {
-  components: { PictureText }
+  components: { PictureButton }
 }
 </script>
 
 <template>
   <main>
-    <PictureText>
-      <h2>Book</h2>
-    </PictureText>
+    <PictureButton> </PictureButton>
   </main>
 </template>
 
