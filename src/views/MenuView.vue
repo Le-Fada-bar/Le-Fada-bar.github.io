@@ -9,7 +9,11 @@ export default {
 <template>
   <main>
     <PictureText>
-      <h2>Bières</h2>
+      <div class="carousel">
+        <h2>&lt;</h2>
+        <h2>BIÈRES</h2>
+        <h2>&gt;</h2>
+      </div>
       <table>
         <thead>
           <th></th>
@@ -23,23 +27,13 @@ export default {
         </tbody>
       </table>
     </PictureText>
-
-    <PictureText>
-      <h2>Bières pressions</h2>
-      <table>
-        <thead>
-          <th></th>
-          <th>Prix</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Heineken</td>
-            <td>5</td>
-          </tr>
-        </tbody>
-      </table>
-    </PictureText>
   </main>
 </template>
 
-<style></style>
+<style>
+.carousel{
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+</style>

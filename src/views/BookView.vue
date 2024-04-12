@@ -8,8 +8,8 @@ export default {
 </script>
 
 <template>
+  <PictureButton> </PictureButton>
   <main>
-    <PictureButton> </PictureButton>
     <Contact></Contact>
   </main>
 </template>

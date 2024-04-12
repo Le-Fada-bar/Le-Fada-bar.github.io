@@ -2,7 +2,8 @@
 :root {
   --theme-white: #ffffff;
   --theme-black: #000000;
-  --theme-spacing: 2em;
+  --theme-spacing: 3em;
+  --theme-small-spacing: 1em;
 }
 
 body {

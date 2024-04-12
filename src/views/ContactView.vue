@@ -8,8 +8,8 @@ export default {
 
 <template>
   <main>
-    <PictureText>
-      <h2>Contactez-nous</h2>
+    <PictureText picture="barmen.jpg">
+      <h2>CONTACTEZ-NOUS</h2>
       <ul>
         <li> Address</li>
         <li> Phone</li>

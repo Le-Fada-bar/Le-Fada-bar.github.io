@@ -1,13 +1,13 @@
 <template>
   <div class="contact">
     <div>
-      <h2>Appelez Paul</h2>
+      <h2>APPELEZ PAUL</h2>
       <ul>
         <li>+33 6 12 34 56 78</li>
       </ul>
     </div>
     <div class="round-picture">
-      <img src="/paul.jpg">
+      <img class="" src="/paul.jpg">
     </div>
   </div>
 </template>

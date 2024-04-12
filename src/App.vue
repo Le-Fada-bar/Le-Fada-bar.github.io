@@ -9,9 +9,9 @@ export default {
   data() {
     return {
       toggled: false,
-      menu_height: "2em",
+      menu_height: "3em",
       menu_inside: "=",
-      menu_background_color: "rgba(0, 0, 0, 0)",
+      menu_background_color: "rgba(0, 0, 0, 0.4)",
       menu_color: "var(--theme-white)",
     }
   },
@@ -31,12 +31,12 @@ export default {
     },
     close() {
       this.toggled = false;
-      this.menu_height = "2em";
+      this.menu_height = "3em";
       this.menu_inside = "=";
       this.onScroll()
     },
     transparent_menu() {
-      this.menu_background_color = "rgba(0, 0, 0, 0)";
+      this.menu_background_color = "rgba(0, 0, 0, 0.4)";
       this.menu_color = "#ffffff";
     },
     colored_menu() {
@@ -44,7 +44,7 @@ export default {
       this.menu_color = "var(--theme-black)";
     },
     onScroll() {
-      if (this.$route.name == "home" && window.scrollY < (.5 * window.innerHeight)) {
+      if ((this.$route.name == "home" || this.$route.name == "book") && !this.toggled && window.scrollY < (.5 * window.innerHeight)) {
         this.transparent_menu();
       } else {
         this.colored_menu();
@@ -72,7 +72,7 @@ export default {
     <div class="burger-div"><button @click="toggle" class="burger-menu">{{ menu_inside }}</button></div>
     <nav>
       <div>
-        <RouterLink to="/" @click="close">Fada</RouterLink>
+        <RouterLink to="/" @click="close">FADA</RouterLink>
       </div>
       <div>
         <RouterLink v-if="toggled" @click="close" to="/book">Réservez</RouterLink>
@@ -93,7 +93,7 @@ export default {
     <Footer v-if="toggled" />
   </header>
   <div class="container">
-    <RouterView style="min-height: 80vh" />
+    <RouterView />
   </div>
   <Footer />
 </template>
@@ -102,9 +102,12 @@ export default {
 header {
   top: 0;
   position: fixed;
-  border-bottom: solid;
+  z-index: 6;
+  border-bottom: solid 2px;
   width: 100%;
-  /* background-color: var(--theme-white); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 nav {
@@ -119,7 +122,9 @@ nav>div {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: var(--theme-spacing);
+  height: 2em;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.5em;
 }
 
 .burger-div {
@@ -130,5 +135,7 @@ nav>div {
 .burger-menu {
   height: 2em;
   aspect-ratio: 1;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.5em;
 }
 </style>

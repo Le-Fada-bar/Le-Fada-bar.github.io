@@ -9,7 +9,12 @@ export default {
 <template>
   <main>
     <PictureText>
-      <h2>#EVENEMENT</h2>
+
+      <div class="carousel">
+        <h2>&lt;</h2>
+        <h2>#EVENEMENT</h2>
+        <h2>&gt;</h2>
+      </div>
       <ul>
         <li>#DATE</li>
         <li>#DESCRIPTION</li>
@@ -18,4 +23,10 @@ export default {
   </main>
 </template>
 
-<style></style>
+<style>
+.carousel {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+</style>

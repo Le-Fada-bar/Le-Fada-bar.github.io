@@ -9,14 +9,13 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-top: var(--theme-spacing);
   width: 100%;
   aspect-ratio: 4/3;
-  background-color: red;
   color: var(--theme-white);
+  background-image: url('/bar.jpg');
 }
 
 .button-picture>button {
-  margin-bottom: var(--theme-spacing)
+  margin-bottom: var(--theme-small-spacing);
 }
 </style>

@@ -9,14 +9,14 @@ export default {
 <template>
   <main>
     <PictureText>
-      <h2>Horaires</h2>
+      <h2>HORAIRES</h2>
       <ul>
         <li>#DATE</li>
         <li>#DESCRIPTION</li>
       </ul>
     </PictureText>
-    <PictureText>
-      <h2>Où nous trouver</h2>
+    <PictureText maps="true">
+      <h2>OÙ NOUS TROUVER</h2>
       <ul>
         <li>#Addresse</li>
       </ul>

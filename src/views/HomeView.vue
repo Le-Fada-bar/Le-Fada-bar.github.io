@@ -21,12 +21,12 @@ export default {
   </div>
   <main id="main">
     <PictureText>
-      <h2>Cave à ami </h2>
-      <h2> Bar à copain </h2>
+      <h2>CAVE À COPAIN </h2>
+      <h2> BAR À MANGER </h2>
       <p>This is a long text</p>
     </PictureText>
     <PictureText>
-      <h2>Concept</h2>
+      <h2>CONCEPT</h2>
       <p>This is a long text</p>
       <p>This is a long text</p>
     </PictureText>
