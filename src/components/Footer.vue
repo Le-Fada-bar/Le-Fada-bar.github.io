@@ -9,7 +9,7 @@
 
 <style>
 footer {
-  margin-top: var(--theme-spacing);
+  margin-top: auto;
   width: 100%;
   display: flex;
   flex-direction: column;

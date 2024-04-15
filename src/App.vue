@@ -94,8 +94,8 @@ export default {
   </header>
   <div class="container">
     <RouterView />
+    <Footer />
   </div>
-  <Footer />
 </template>
 
 <style scoped>
@@ -137,5 +137,11 @@ nav>div {
   aspect-ratio: 1;
   font-family: "Archivo Black", sans-serif;
   font-size: 1.5em;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 </style>
