@@ -18,9 +18,34 @@ export default {
     <PictureText :maps="true" :is_left="false">
       <h2>OÙ NOUS TROUVER</h2>
       <LogoLink address="https://maps.app.goo.gl/eBKBerbVwWXnuEybA" logo="maps">64 Rue Jean-Jacques Rousseau</LogoLink>
-      <p>Proximité métro #TODO</p>
+      <LogoLink address="#" logo="ratp">Châtelet
+        <div class="metro">1</div>
+        <div class="metro">4</div>
+        <div class="metro">7</div>
+        <div class="metro">11</div>
+        <div class="metro">14</div>
+        <div class="metro rer">A</div>
+        <div class="metro rer">B</div>
+        <div class="metro rer">D</div>
+      </LogoLink>
     </PictureText>
   </main>
 </template>
 
-<style></style>
+<style>
+.metro {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100%;
+  width: 1.2em;
+  height: 1.2em;
+  margin-left: .2em;
+  background-color: var(--theme-white);
+  color: var(--theme-black);
+}
+
+.rer {
+  border-radius: 25%;
+}
+</style>
