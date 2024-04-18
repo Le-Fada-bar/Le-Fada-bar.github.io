@@ -11,9 +11,38 @@ export default {
   <main>
     <PictureText>
       <h2>HORAIRES</h2>
-      <ul>
-        <li>#TODO</li>
-      </ul>
+      <table>
+        <tbody>
+          <tr>
+            <td>Lundi</td>
+            <td class="table-right">17:00 - 02:00</td>
+          </tr>
+          <tr>
+            <td>Mardi</td>
+            <td class="table-right">17:00 - 02:00</td>
+          </tr>
+          <tr>
+            <td>Mercredi</td>
+            <td class="table-right">17:00 - 02:00</td>
+          </tr>
+          <tr>
+            <td>Jeudi</td>
+            <td class="table-right">17:00 - 02:00</td>
+          </tr>
+          <tr>
+            <td>Vendredi</td>
+            <td class="table-right">17:00 - 02:00</td>
+          </tr>
+          <tr>
+            <td>Samedi</td>
+            <td class="table-right">17:00 - 02:00</td>
+          </tr>
+          <tr>
+            <td>Dimanche</td>
+            <td class="table-right">-</td>
+          </tr>
+        </tbody>
+      </table>
     </PictureText>
     <PictureText :maps="true" :is_left="false">
       <h2>OÙ NOUS TROUVER</h2>
@@ -47,5 +76,9 @@ export default {
 
 .rer {
   border-radius: 25%;
+}
+
+.table-right {
+  text-align: right;
 }
 </style>
