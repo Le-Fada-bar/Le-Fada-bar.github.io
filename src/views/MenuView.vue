@@ -41,10 +41,4 @@ export default {
   </main>
 </template>
 
-<style>
-.carousel{
-  width: 95%;
-  display: flex;
-  justify-content: space-between;
-}
-</style>
+<style></style>
