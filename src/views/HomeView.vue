@@ -16,8 +16,13 @@ export default {
   <video autoplay loop muted>
     <source src="/intro.mp4" />
   </video>
-  <div class="discover">
-    <button @click="scrollTo">Découvrir</button>
+  <div @click="scrollTo" class="discover">
+    <button>Découvrir</button>
+    <div>
+      <svg width="100%" height="1em" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <path style="fill:none;stroke:var(--theme-white);stroke-opacity:1" d="M 0,7 5,10 10,7" />
+      </svg>
+    </div>
   </div>
   <main id="main">
     <PictureText>
@@ -51,6 +56,7 @@ video {
   color: var(--theme-white);
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 </style>
