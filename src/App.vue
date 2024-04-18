@@ -75,7 +75,7 @@ export default {
         <RouterLink to="/" @click="close">FADA</RouterLink>
       </div>
       <div>
-        <RouterLink v-if="toggled" @click="close" to="/book">Réservez</RouterLink>
+        <RouterLink v-if="toggled" @click="close" to="/book">Réserver</RouterLink>
       </div>
       <div>
         <RouterLink v-if="toggled" @click="close" to="/menu">Carte</RouterLink>
@@ -84,7 +84,7 @@ export default {
         <RouterLink v-if="toggled" @click="close" to="/events">Evènements</RouterLink>
       </div>
       <div>
-        <RouterLink v-if="toggled" @click="close" to="/contact">Contactez-nous</RouterLink>
+        <RouterLink v-if="toggled" @click="close" to="/contact">Nous Contacter</RouterLink>
       </div>
       <div>
         <RouterLink v-if="toggled" @click="close" to="/information">Informations</RouterLink>

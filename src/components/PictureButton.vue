@@ -1,6 +1,6 @@
 <template>
   <div class="button-picture">
-    <button>Réservez</button>
+    <button>Réserver</button>
   </div>
 </template>
 
