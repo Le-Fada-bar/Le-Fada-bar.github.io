@@ -11,6 +11,7 @@ body {
 }
 
 main {
+  margin-top: var(--theme-spacing);
   padding: 1em;
 }
 

@@ -9,6 +9,10 @@ export default {
     maps: {
       type: Boolean,
       default: false
+    },
+    is_left: {
+      type: Boolean,
+      default: true
     }
   }
 }
@@ -16,7 +20,7 @@ export default {
 </script>
 
 <template>
-  <div class="picture-container">
+  <div :class="'picture-container ' + (is_left ? 'left' : 'right')">
     <div class="picture">
       <iframe v-if="maps"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6949556800496!2d2.341438676415349!3d48.864027000309925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fcb46714f95%3A0xf1b183cbdf0c8ac4!2sFada!5e0!3m2!1sfr!2sfr!4v1712934595465!5m2!1sfr!2sfr"
@@ -32,12 +36,15 @@ export default {
 
 <style>
 .picture-container {
-  margin-top: var(--theme-spacing);
   width: 100%;
 }
 
+.picture,
+.text {
+  width: 75%;
+}
+
 .picture {
-  width: 80%;
   aspect-ratio: 4/3;
 }
 
@@ -47,15 +54,18 @@ export default {
   object-fit: cover;
 }
 
+.right>.picture {
+  margin-left: auto;
+}
+
+.left>.text {
+  margin-left: auto;
+}
+
 .text {
-  margin-bottom: -3em;
-  top: -3em;
-  left: 10%;
   position: relative;
-  width: 85%;
-  padding-left: 5%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  top: -3em;
+  padding: var(--theme-small-spacing);
   background-color: var(--theme-black);
   color: var(--theme-white);
 }

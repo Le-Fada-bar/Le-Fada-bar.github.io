@@ -15,7 +15,6 @@
 <style>
 .contact {
   display: flex;
-  margin-top: var(--theme-spacing);
   width: 100%;
   justify-content: space-between;
   align-items: center;

@@ -5,7 +5,7 @@ export default {
   components: { PictureText },
   methods: {
     scrollTo() {
-      var scrollDiv = document.getElementById("main").offsetTop;
+      var scrollDiv = document.getElementById("main").offsetTop - 50;
       window.scrollTo({ top: scrollDiv, behavior: 'smooth' });
     }
   }
@@ -25,7 +25,7 @@ export default {
       <h2> BAR À MANGER </h2>
       <p>This is a long text</p>
     </PictureText>
-    <PictureText>
+    <PictureText :is_left="false">
       <h2>CONCEPT</h2>
       <p>This is a long text</p>
       <p>This is a long text</p>

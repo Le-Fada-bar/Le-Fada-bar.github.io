@@ -15,7 +15,7 @@ export default {
         <li>#TODO</li>
       </ul>
     </PictureText>
-    <PictureText maps="true">
+    <PictureText :maps="true" :is_left="false">
       <h2>OÙ NOUS TROUVER</h2>
       <LogoLink address="https://maps.app.goo.gl/eBKBerbVwWXnuEybA" logo="maps">64 Rue Jean-Jacques Rousseau</LogoLink>
       <p>Proximité métro #TODO</p>
