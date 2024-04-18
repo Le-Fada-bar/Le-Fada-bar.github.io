@@ -16,6 +16,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin-bottom: var(--theme-small-spacing);
+  margin-bottom: var(--theme-spacing);
 }
 
 footer>div {

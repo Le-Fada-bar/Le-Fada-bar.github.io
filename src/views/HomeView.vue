@@ -51,7 +51,7 @@ video {
 }
 
 .discover {
-  top: 92vh;
+  top: 85vh;
   position: absolute;
   color: var(--theme-white);
   width: 100%;
