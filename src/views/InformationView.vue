@@ -15,7 +15,7 @@ export default {
         <tbody>
           <tr>
             <td>Lundi</td>
-            <td class="table-right">17:00 - 02:00</td>
+            <td class="table-right">-</td>
           </tr>
           <tr>
             <td>Mardi</td>
