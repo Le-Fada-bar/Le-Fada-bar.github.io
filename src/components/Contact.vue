@@ -1,10 +1,16 @@
+<script>
+import LogoLink from '../components/LogoLink.vue'
+
+export default {
+  components: { LogoLink }
+}
+</script>
+
 <template>
   <div class="contact">
     <div>
       <h2>APPELEZ PAUL</h2>
-      <ul>
-        <li>+33 6 12 34 56 78</li>
-      </ul>
+      <LogoLink address="telto:+33612345678" logo="phone" :is_white="false">+33 6 12 34 56 78</LogoLink>
     </div>
     <div class="round-picture">
       <img class="" src="/paul.jpg">

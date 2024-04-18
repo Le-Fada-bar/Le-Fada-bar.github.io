@@ -10,6 +10,10 @@ export default {
     logo: {
       type: String,
       default: "maps"
+    },
+    is_white: {
+      type: Boolean,
+      default: true
     }
   },
 }
@@ -17,7 +21,7 @@ export default {
 
 <template>
   <div class="logo"><a :href="address"><img style="height: 1em; margin-right: 0.5em"
-        :src="'/icons/' + logo + '_white.svg'" alt="">
+        :src="'/icons/' + logo + (is_white ? '_white' : '') + '.svg'" alt="">
       <slot></slot>
     </a></div>
 
