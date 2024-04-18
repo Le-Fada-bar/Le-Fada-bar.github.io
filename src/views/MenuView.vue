@@ -9,11 +9,22 @@ export default {
 <template>
   <main>
     <PictureText>
-      <div class="carousel">
-        <h2>&lt;</h2>
-        <h2>BIÈRES</h2>
-        <h2>&gt;</h2>
-      </div>
+      <h2>BIÈRES</h2>
+      <table>
+        <thead>
+          <th></th>
+          <th>Prix</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Triple Karmeliet</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+    </PictureText>
+    <PictureText :is_left="false">
+      <h2>BIÈRES</h2>
       <table>
         <thead>
           <th></th>
