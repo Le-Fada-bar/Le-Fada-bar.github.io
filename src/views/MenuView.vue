@@ -13,12 +13,12 @@ export default {
       <table>
         <thead>
           <th></th>
-          <th>Prix</th>
+          <th class="table-right">Prix</th>
         </thead>
         <tbody>
           <tr>
             <td>Triple Karmeliet</td>
-            <td>5</td>
+            <td class="table-right">5</td>
           </tr>
         </tbody>
       </table>
@@ -28,12 +28,12 @@ export default {
       <table>
         <thead>
           <th></th>
-          <th>Prix</th>
+          <th class="table-right">Prix</th>
         </thead>
         <tbody>
           <tr>
             <td>Triple Karmeliet</td>
-            <td>5</td>
+            <td class="table-right">5</td>
           </tr>
         </tbody>
       </table>
@@ -41,4 +41,8 @@ export default {
   </main>
 </template>
 
-<style></style>
+<style>
+.table-right {
+  text-align: right;
+}
+</style>
