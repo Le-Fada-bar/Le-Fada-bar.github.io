@@ -9,17 +9,17 @@ export default {
 <template>
   <main>
     <PictureText>
-      <h2>#EVENEMENT</h2>
+      <h2>Evènement</h2>
       <ul>
-        <li>#DATE</li>
-        <li>#DESCRIPTION</li>
+        <li>DATE</li>
+        <li>DESCRIPTION</li>
       </ul>
     </PictureText>
     <PictureText :is_left="false">
-      <h2>#EVENEMENT</h2>
+      <h2>Evènement</h2>
       <ul>
-        <li>#DATE</li>
-        <li>#DESCRIPTION</li>
+        <li>DATE</li>
+        <li>DESCRIPTION</li>
       </ul>
     </PictureText>
   </main>
