@@ -4,6 +4,7 @@
       <div><img width="25px" src="/icons/instagram.svg"></div>
       <div style="padding-left: .5em"><img width="25px" src="/icons/privateaser.svg"></div>
     </div>
+    <div class="copyright">© BAMSE, 2024 </div>
   </footer>
 </template>
 
@@ -22,5 +23,9 @@ footer {
 footer>div {
   display: flex;
   flex-direction: row;
+}
+
+.copyright {
+  font-size: 0.8em;
 }
 </style>
