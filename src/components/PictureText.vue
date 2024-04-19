@@ -39,12 +39,12 @@ export default {
   width: 100%;
 }
 
-.picture,
 .text {
-  width: 75%;
+  width: 80%;
 }
 
 .picture {
+  width: 88%;
   aspect-ratio: 4/3;
 }
 
@@ -65,7 +65,7 @@ export default {
 .text {
   position: relative;
   top: -3em;
-  padding: var(--theme-small-spacing);
+  padding: 4%;
   background-color: var(--theme-black);
   color: var(--theme-white);
 }
