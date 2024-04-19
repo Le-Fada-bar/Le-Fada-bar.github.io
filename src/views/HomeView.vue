@@ -26,12 +26,11 @@ export default {
   </div>
   <main id="main">
     <PictureText>
-      <h2>CAVE À COPAIN </h2>
-      <h2> BAR À MANGER </h2>
+      <h2>Cave à copain <br> Bar à manger</h2>
       <p>This is a long text</p>
     </PictureText>
     <PictureText :is_left="false">
-      <h2>CONCEPT</h2>
+      <h2>Concept</h2>
       <p>This is a long text</p>
       <p>This is a long text</p>
     </PictureText>

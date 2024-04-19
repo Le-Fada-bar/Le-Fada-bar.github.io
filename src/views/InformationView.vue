@@ -10,7 +10,7 @@ export default {
 <template>
   <main>
     <PictureText>
-      <h2>HORAIRES</h2>
+      <h2>Horaires</h2>
       <table>
         <tbody>
           <tr>
@@ -45,7 +45,7 @@ export default {
       </table>
     </PictureText>
     <PictureText :maps="true" :is_left="false">
-      <h2>OÙ NOUS TROUVER</h2>
+      <h2>Où nous trouver</h2>
       <LogoLink address="https://maps.app.goo.gl/eBKBerbVwWXnuEybA" logo="maps">64 Rue Jean-Jacques Rousseau</LogoLink>
       <LogoLink address="https://maps.app.goo.gl/eBKBerbVwWXnuEybA" logo="maps" :is_white="false">75001, Paris
       </LogoLink>

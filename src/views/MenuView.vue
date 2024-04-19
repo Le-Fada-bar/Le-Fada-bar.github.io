@@ -9,7 +9,7 @@ export default {
 <template>
   <main>
     <PictureText>
-      <h2>BIÈRES</h2>
+      <h2>Bières</h2>
       <table>
         <thead>
           <th></th>
@@ -24,7 +24,7 @@ export default {
       </table>
     </PictureText>
     <PictureText :is_left="false">
-      <h2>BIÈRES</h2>
+      <h2>Bières</h2>
       <table>
         <thead>
           <th></th>

@@ -69,10 +69,10 @@ export default {
 <template>
   <header
     :style="'height: ' + menu_height + '; background-color: ' + menu_background_color + '; color: ' + menu_color + ';'">
-    <div class="burger-div"><button @click="toggle" class="burger-menu">{{ menu_inside }}</button></div>
+    <div class="burger-div bold"><button @click="toggle" class="burger-menu">{{ menu_inside }}</button></div>
     <nav>
-      <div>
-        <RouterLink to="/" @click="close">FADA</RouterLink>
+      <div class="bold">
+        <RouterLink to="/" @click="close">Fada</RouterLink>
       </div>
       <div>
         <RouterLink v-if="toggled" @click="close" to="/book">Réserver</RouterLink>
@@ -123,7 +123,7 @@ nav>div {
   align-items: center;
   justify-content: center;
   height: 2em;
-  font-family: "Archivo Black", sans-serif;
+  font-weight: 500;
   font-size: 1.5em;
 }
 

@@ -9,7 +9,7 @@ export default {
 <template>
   <div class="button-picture"></div>
   <main>
-    <a href="#"><button class="book-button bold">RÉSERVER</button></a>
+    <a href="#"><button class="book-button">Réserver</button></a>
     <Contact></Contact>
   </main>
 </template>
@@ -19,6 +19,7 @@ export default {
   background-color: var(--theme-black);
   color: var(--theme-white);
   width: 100%;
+  font-weight: 700;
   padding: var(--theme-small-spacing);
   margin-bottom: var(--theme-spacing);
 }
