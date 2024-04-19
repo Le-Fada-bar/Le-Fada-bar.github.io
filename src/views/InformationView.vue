@@ -47,15 +47,21 @@ export default {
     <PictureText :maps="true" :is_left="false">
       <h2>OÙ NOUS TROUVER</h2>
       <LogoLink address="https://maps.app.goo.gl/eBKBerbVwWXnuEybA" logo="maps">64 Rue Jean-Jacques Rousseau</LogoLink>
+      <LogoLink address="https://maps.app.goo.gl/eBKBerbVwWXnuEybA" logo="maps" :is_white="false">75001, Paris
+      </LogoLink>
       <LogoLink address="#" logo="ratp">Châtelet
-        <div class="metro">1</div>
-        <div class="metro">4</div>
-        <div class="metro">7</div>
-        <div class="metro">11</div>
-        <div class="metro">14</div>
-        <div class="metro rer">A</div>
-        <div class="metro rer">B</div>
-        <div class="metro rer">D</div>
+        <img class="metro" src="/ratp/1.svg">
+        <img class="metro" src="/ratp/7.svg">
+        <img class="metro" src="/ratp/11.svg">
+        <img class="metro" src="/ratp/14.svg">
+      </LogoLink>
+      <LogoLink address="#" logo="ratp" :is_white="false">Les Halles
+        <img class="metro" src="/ratp/4.svg">
+      </LogoLink>
+      <LogoLink address="#" logo="ratp" :is_white="false">Châtelet - Les Halles
+        <img class="metro" src="/ratp/A.svg">
+        <img class="metro" src="/ratp/B.svg">
+        <img class="metro" src="/ratp/D.svg">
       </LogoLink>
     </PictureText>
   </main>
@@ -63,19 +69,8 @@ export default {
 
 <style>
 .metro {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 100%;
-  width: 1.2em;
-  height: 1.2em;
-  margin-left: .2em;
-  background-color: var(--theme-white);
-  color: var(--theme-black);
-}
-
-.rer {
-  border-radius: 25%;
+  height: 1em;
+  padding-left: 0.3em;
 }
 
 .table-right {
