@@ -1,13 +1,15 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router'
 import Footer from './components/Footer.vue'
+import Waiting from './components/Waiting.vue'
 
 export default {
   components: {
-    Footer
+    Footer, Waiting
   },
   data() {
     return {
+      loaded: false,
       toggled: false,
       menu_height: "3em",
       menu_inside: "=",
@@ -52,6 +54,7 @@ export default {
     }
   },
   mounted() {
+    setTimeout(() => { this.loaded = true; console.log(this.loaded) }, 2500);
     window.addEventListener('scroll', this.onScroll);
   },
   unmounted() {
@@ -67,6 +70,7 @@ export default {
 </script>
 
 <template>
+  <Waiting :visible="!loaded" />
   <header
     :style="'height: ' + menu_height + '; background-color: ' + menu_background_color + '; color: ' + menu_color + ';'">
     <div class="burger-div bold"><button @click="toggle" class="burger-menu">{{ menu_inside }}</button></div>
