@@ -19,23 +19,23 @@ export default {
           </tr>
           <tr>
             <td>Mardi</td>
-            <td class="table-right">17:00 - 02:00</td>
+            <td class="table-right">17h - 2h</td>
           </tr>
           <tr>
             <td>Mercredi</td>
-            <td class="table-right">17:00 - 02:00</td>
+            <td class="table-right">17h - 2h</td>
           </tr>
           <tr>
             <td>Jeudi</td>
-            <td class="table-right">17:00 - 02:00</td>
+            <td class="table-right">17h - 2h</td>
           </tr>
           <tr>
             <td>Vendredi</td>
-            <td class="table-right">17:00 - 02:00</td>
+            <td class="table-right">17h - 2h</td>
           </tr>
           <tr>
             <td>Samedi</td>
-            <td class="table-right">17:00 - 02:00</td>
+            <td class="table-right">17h - 2h</td>
           </tr>
           <tr>
             <td>Dimanche</td>
