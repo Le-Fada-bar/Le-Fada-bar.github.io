@@ -7,9 +7,12 @@ export default {
 </script>
 
 <template>
-  <div class="button-picture"></div>
+  <div class="button-picture">
+    <div>
+      <a href="#"><button class="book-button">Réserver</button></a>
+    </div>
+  </div>
   <main>
-    <a href="#"><button class="book-button">Réserver</button></a>
     <Contact></Contact>
   </main>
 </template>
@@ -21,13 +24,20 @@ export default {
   width: 100%;
   font-weight: 700;
   padding: var(--theme-small-spacing);
-  margin-bottom: var(--theme-spacing);
+  margin-bottom: var(--theme-small-spacing);
 }
 
 .button-picture {
   width: 100%;
   aspect-ratio: 4/3;
   object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   background-image: url('/bar.jpg');
+}
+
+.button-picture>div {
+  width: 70%;
 }
 </style>
