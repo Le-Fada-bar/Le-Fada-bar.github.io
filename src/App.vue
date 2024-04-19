@@ -84,7 +84,7 @@ export default {
         <RouterLink v-if="toggled" @click="close" to="/events">Evènements</RouterLink>
       </div>
       <div>
-        <RouterLink v-if="toggled" @click="close" to="/contact">Nous Contacter</RouterLink>
+        <RouterLink v-if="toggled" @click="close" to="/contact">Nous contacter</RouterLink>
       </div>
       <div>
         <RouterLink v-if="toggled" @click="close" to="/information">Informations</RouterLink>
