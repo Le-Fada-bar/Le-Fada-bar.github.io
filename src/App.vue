@@ -39,7 +39,7 @@ export default {
       this.onScroll()
     },
     close_and_move() {
-      close();
+      this.close();
       window.scrollTo({ top: 0 });
     },
     transparent_menu() {
