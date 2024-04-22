@@ -11,6 +11,7 @@ export default {
     return {
       loaded: false,
       toggled: false,
+      isSmall: true,
       menu_height: "3em",
       menu_inside: "=",
       menu_background_color: "rgba(0, 0, 0, 0.4)",
@@ -37,6 +38,10 @@ export default {
       this.menu_inside = "=";
       this.onScroll()
     },
+    close_and_move() {
+      close();
+      window.scrollTo({ top: 0 });
+    },
     transparent_menu() {
       this.menu_background_color = "rgba(0, 0, 0, 0.4)";
       this.menu_color = "#ffffff";
@@ -51,14 +56,20 @@ export default {
       } else {
         this.colored_menu();
       }
+    },
+    onResize() {
+      this.isSmall = window.innerWidth < 950;
     }
   },
   mounted() {
     setTimeout(() => { this.loaded = true; console.log(this.loaded) }, 2500);
+    this.onResize();
     window.addEventListener('scroll', this.onScroll);
+    window.addEventListener('resize', this.onResize);
   },
   unmounted() {
     window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.onResize);
   },
   watch: {
     $route(to, from) {
@@ -75,23 +86,23 @@ export default {
     :style="'height: ' + menu_height + '; background-color: ' + menu_background_color + '; color: ' + menu_color + ';'">
     <div class="burger-div bold"><button @click="toggle" class="burger-menu">{{ menu_inside }}</button></div>
     <nav>
-      <div class="bold">
-        <RouterLink to="/" @click="close">Fada</RouterLink>
+      <div class="bold brand">
+        <RouterLink to="/" @click="close_and_move">Fada</RouterLink>
       </div>
       <div>
-        <RouterLink v-if="toggled" @click="close" to="/book">Réserver</RouterLink>
+        <RouterLink v-if="!isSmall || toggled" @click="close_and_move" to="/book">Réserver</RouterLink>
       </div>
       <div>
-        <RouterLink v-if="toggled" @click="close" to="/menu">Carte</RouterLink>
+        <RouterLink v-if="!isSmall || toggled" @click="close_and_move" to="/menu">Carte</RouterLink>
       </div>
       <div>
-        <RouterLink v-if="toggled" @click="close" to="/events">Evènements</RouterLink>
+        <RouterLink v-if="!isSmall || toggled" @click="close_and_move" to="/events">Evènements</RouterLink>
       </div>
       <div>
-        <RouterLink v-if="toggled" @click="close" to="/contact">Nous contacter</RouterLink>
+        <RouterLink v-if="!isSmall || toggled" @click="close_and_move" to="/contact">Nous contacter</RouterLink>
       </div>
       <div>
-        <RouterLink v-if="toggled" @click="close" to="/information">Informations</RouterLink>
+        <RouterLink v-if="!isSmall || toggled" @click="close_and_move" to="/information">Informations</RouterLink>
       </div>
     </nav>
     <Footer v-if="toggled" />
@@ -147,5 +158,35 @@ nav>div {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+@media only screen and (min-width: 950px) {
+  .burger-menu {
+    visibility: hidden;
+  }
+
+  nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .brand {
+    margin-right: auto;
+  }
+
+  nav>div {
+    padding-left: var(--theme-small-spacing);
+    padding-right: var(--theme-small-spacing);
+  }
+}
+
+
+.router-link-active {
+  text-decoration: underline;
+}
+
+.brand>.router-link-active {
+  text-decoration: none;
 }
 </style>
