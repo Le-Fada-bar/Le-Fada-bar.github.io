@@ -30,7 +30,7 @@ export default {
 .button-picture {
   width: 100%;
   aspect-ratio: 4/3;
-  object-fit: cover;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: flex-end;
