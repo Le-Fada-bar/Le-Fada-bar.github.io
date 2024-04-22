@@ -40,4 +40,14 @@ export default {
 .button-picture>div {
   width: 70%;
 }
+
+@media only screen and (min-width: 700px) {
+  .button-picture {
+    aspect-ratio: 4;
+  }
+
+  .button-picture>div {
+    width: 25%;
+  }
+}
 </style>
