@@ -188,10 +188,25 @@ nav>div {
 
 
 .router-link-active {
+  opacity: 0.7;
+}
+
+nav>div>a {
   text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+nav>div>a:hover {
+  text-decoration-color: inherit;
+  transition: text-decoration-color 0.4s ease-in;
+}
+
+nav>div>.router-link-active:hover,
+.brand>a:hover {
+  text-decoration-color: transparent;
 }
 
 .brand>.router-link-active {
-  text-decoration: none;
+  opacity: inherit;
 }
 </style>
