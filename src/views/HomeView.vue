@@ -27,7 +27,11 @@ export default {
   <main id="main">
     <PictureText>
       <h2>Cave à copain <br> Bar à manger</h2>
-      <p>This is a long text</p>
+      <p>À l’affût d’un nouveau cadre pour partager de bons moments avec vos invités dans le 1 er arrondissement de
+        Paris ? Faites un détour au FADA. Auprès de cet établissement atypique, tout a été pensé pour vous accueillir
+        dans une atmosphère conviviale. Installé rue Jean-Jacques Rousseau, ce bar vous fera plonger dans une ambiance
+        méditerranéenne au cœur de la capitale.
+      </p>
     </PictureText>
     <PictureText :is_left="false">
       <h2>Concept</h2>
