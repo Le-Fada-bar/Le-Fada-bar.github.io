@@ -12,7 +12,7 @@ export default {
       loaded: false,
       toggled: false,
       isSmall: true,
-      menu_height: "3em",
+      menu_height: "3.5em",
       menu_inside: "=",
       menu_background_color: "rgba(0, 0, 0, 0.4)",
       menu_color: "var(--theme-white)",
@@ -34,7 +34,7 @@ export default {
     },
     close() {
       this.toggled = false;
-      this.menu_height = "3em";
+      this.menu_height = "3.5em";
       this.menu_inside = "=";
       this.onScroll()
     },
@@ -138,7 +138,7 @@ nav>div {
   align-items: center;
   justify-content: center;
   height: 2em;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.5em;
 }
 
@@ -147,11 +147,15 @@ nav>div {
   position: fixed;
 }
 
+.brand {
+  font-size: 2em;
+}
+
 .burger-menu {
   height: 2em;
   aspect-ratio: 1;
   font-family: "Archivo Black", sans-serif;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .container {
@@ -173,6 +177,7 @@ nav>div {
 
   .brand {
     margin-right: auto;
+    font-size: 2em;
   }
 
   nav>div {
