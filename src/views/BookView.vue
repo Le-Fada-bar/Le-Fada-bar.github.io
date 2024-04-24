@@ -27,6 +27,11 @@ export default {
   margin-bottom: var(--theme-small-spacing);
 }
 
+.book-button:hover {
+  background-color: var(--theme-white);
+  color: var(--theme-black);
+}
+
 .button-picture {
   width: 100%;
   aspect-ratio: 4/3;
