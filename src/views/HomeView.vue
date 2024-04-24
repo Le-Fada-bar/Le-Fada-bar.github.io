@@ -54,8 +54,10 @@ video {
   position: absolute;
   color: var(--theme-white);
   width: 100%;
+  height: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
 }
 </style>
