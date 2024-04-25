@@ -54,11 +54,11 @@ video {
 }
 
 .discover {
-  top: 85vh;
+  top: 85svh;
   position: absolute;
   color: var(--theme-white);
   width: 100%;
-  height: 15vh;
+  height: 15svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
