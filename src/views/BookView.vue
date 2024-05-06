@@ -1,8 +1,9 @@
 <script>
 import Contact from '../components/Contact.vue'
+import WordCarousel from '../components/WordCarousel.vue'
 
 export default {
-  components: { Contact }
+  components: { Contact, WordCarousel }
 }
 </script>
 
@@ -13,6 +14,7 @@ export default {
     </div>
   </div>
   <main>
+    <WordCarousel />
     <Contact></Contact>
   </main>
 </template>
