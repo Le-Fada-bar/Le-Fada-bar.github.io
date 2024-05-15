@@ -10,26 +10,36 @@ export default {
 <template>
   <div class="button-picture">
     <div>
-      <a href="#"><button class="book-button">Réserver</button></a>
+      <WordCarousel />
+      <div class="book-button">
+        <a href="#"><button>Réserver</button></a>
+      </div>
     </div>
   </div>
   <main>
-    <WordCarousel />
     <Contact></Contact>
   </main>
 </template>
 
 <style>
 .book-button {
+  width: 100%;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+.book-button>a>button {
   background-color: var(--theme-black);
   color: var(--theme-white);
-  width: 100%;
+  margin: auto;
+  min-width: 15em;
   font-weight: 700;
   padding: var(--theme-small-spacing);
   margin-bottom: var(--theme-small-spacing);
 }
 
-.book-button:hover {
+.book-button>a>button:hover {
   background-color: var(--theme-white);
   color: var(--theme-black);
 }
@@ -45,7 +55,7 @@ export default {
 }
 
 .button-picture>div {
-  width: 70%;
+  width: 100%;
 }
 
 @media only screen and (min-width: 700px) {
@@ -54,7 +64,7 @@ export default {
   }
 
   .button-picture>div {
-    width: 25%;
+    width: 100%;
   }
 }
 </style>

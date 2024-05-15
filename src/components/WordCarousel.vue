@@ -20,11 +20,12 @@
 .carousels {
   display: flex;
   flex-direction: row;
+  color: var(--theme-white);
 }
 
 .carousel {
   width: 50%;
-  height: 8em;
+  height: 6em;
   position: relative;
   font-size: 2em;
 }
@@ -65,12 +66,12 @@
   }
 
   8%,
-  33% {
+  34% {
     top: 2em;
     opacity: 1;
   }
 
-  42%,
+  43%,
   100% {
     top: 0em;
     opacity: 0;
