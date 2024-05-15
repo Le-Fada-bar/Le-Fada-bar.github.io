@@ -1,4 +1,6 @@
 <script>
+import axios from 'axios';
+
 import { RouterLink, RouterView } from 'vue-router'
 import Footer from './components/Footer.vue'
 import Waiting from './components/Waiting.vue'
@@ -16,6 +18,7 @@ export default {
       menu_inside: "=",
       menu_background_color: "rgba(0, 0, 0, 0.4)",
       menu_color: "var(--theme-white)",
+      dashboard: 0,
     }
   },
   methods: {
@@ -62,7 +65,15 @@ export default {
     }
   },
   mounted() {
-    setTimeout(() => { this.loaded = true; console.log(this.loaded) }, 2500);
+    // setTimeout(() => { this.loaded = true; console.log(this.loaded) }, 2500);
+    axios
+      .get('https://script.google.com/macros/s/AKfycbxB3e_qnpiX-zPrOqpMGni48hzPO58B7LCmJnjfiIt9oJ4G2orjTnKOvrvF7Wv_8T4h/exec')
+      .then(
+        response => {
+          this.dashboard = response["data"]
+          console.log(this.dashboard);
+          this.loaded = true;
+        });
     this.onResize();
     window.addEventListener('scroll', this.onScroll);
     window.addEventListener('resize', this.onResize);
