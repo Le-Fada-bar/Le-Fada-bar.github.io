@@ -9,8 +9,9 @@ export default {
 
 <template>
   <main>
-    <PictureText>
+    <PictureText v-if="this.$root.dashboard">
       <h2>Horaires</h2>
+      <p v-if="this.$root.dashboard.opening.message"><strong>{{ this.$root.dashboard.opening.message }}</strong></p>
       <table>
         <tbody>
           <tr v-for="time in this.$root.dashboard.opening.times">
