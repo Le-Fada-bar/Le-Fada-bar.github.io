@@ -67,7 +67,7 @@ export default {
   mounted() {
     // setTimeout(() => { this.loaded = true; console.log(this.loaded) }, 2500);
     axios
-      .get('https://script.google.com/macros/s/AKfycbxB3e_qnpiX-zPrOqpMGni48hzPO58B7LCmJnjfiIt9oJ4G2orjTnKOvrvF7Wv_8T4h/exec')
+      .get('https://script.google.com/macros/s/AKfycbw5mEfGJf-GHCo0iy9O_oWtTpHv0mw-CHA6mBda7g37OZqWeiNCamVDQJn-QY9lZ8Aj/exec')
       .then(
         response => {
           this.dashboard = response["data"]
