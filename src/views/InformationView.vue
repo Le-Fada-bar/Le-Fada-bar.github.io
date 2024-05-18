@@ -13,33 +13,9 @@ export default {
       <h2>Horaires</h2>
       <table>
         <tbody>
-          <tr>
-            <td>Lundi</td>
-            <td class="table-right">-</td>
-          </tr>
-          <tr>
-            <td>Mardi</td>
-            <td class="table-right">17h - 2h</td>
-          </tr>
-          <tr>
-            <td>Mercredi</td>
-            <td class="table-right">17h - 2h</td>
-          </tr>
-          <tr>
-            <td>Jeudi</td>
-            <td class="table-right">17h - 2h</td>
-          </tr>
-          <tr>
-            <td>Vendredi</td>
-            <td class="table-right">17h - 2h</td>
-          </tr>
-          <tr>
-            <td>Samedi</td>
-            <td class="table-right">17h - 2h</td>
-          </tr>
-          <tr>
-            <td>Dimanche</td>
-            <td class="table-right">-</td>
+          <tr v-for="time in this.$root.dashboard.opening.times">
+            <td>{{ time[0] }}</td>
+            <td class="table-right">{{ time[1] }} - {{ time[2] }}</td>
           </tr>
         </tbody>
       </table>
