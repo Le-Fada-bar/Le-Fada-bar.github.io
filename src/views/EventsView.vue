@@ -1,26 +1,19 @@
 <script>
 import PictureText from '../components/PictureText.vue'
+import LogoLink from '../components/LogoLink.vue'
 
 export default {
-  components: { PictureText }
+  components: { PictureText, LogoLink }
 }
 </script>
 
 <template>
   <main>
-    <PictureText>
-      <h2>Evènement</h2>
-      <ul>
-        <li>DATE</li>
-        <li>DESCRIPTION</li>
-      </ul>
-    </PictureText>
-    <PictureText :is_left="false">
-      <h2>Evènement</h2>
-      <ul>
-        <li>DATE</li>
-        <li>DESCRIPTION</li>
-      </ul>
+    <PictureText v-if="this.$root.dashboard" v-for="(event, index) in this.$root.dashboard.events"
+      :picture="event.image + '?s=1500?authuser=0'" :is_left="index % 2 == 0">
+      <h2>{{ event.title }}</h2>
+      <LogoLink address="#" logo="calendar">{{ event.date }} - {{ event.time }}</LogoLink>
+      <p>{{ event.description }}</p>
     </PictureText>
   </main>
 </template>
