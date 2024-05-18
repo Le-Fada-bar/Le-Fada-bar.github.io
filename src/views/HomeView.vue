@@ -35,8 +35,10 @@ export default {
     </PictureText>
     <PictureText :is_left="false">
       <h2>Concept</h2>
-      <p>This is a long text</p>
-      <p>This is a long text</p>
+      <p>Le Fada est bel et bien un bar de copains ! Les anciens élèves de l'École des Mines de Saint-Étienne se sont
+        associés pour créer un lieu d'accueil chaleureux ouvert à tous. Central et accessible, l'objectif est de réunir
+        les anciens élèves de l'École et, bien sûr, tous les bons vivants autour d'un verre. À très bientôt au Fada !
+      </p>
     </PictureText>
   </main>
 </template>
