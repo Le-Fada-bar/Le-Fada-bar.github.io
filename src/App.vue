@@ -67,7 +67,7 @@ export default {
   mounted() {
     // setTimeout(() => { this.loaded = true; console.log(this.loaded) }, 2500);
     axios
-      .get('https://script.google.com/macros/s/AKfycbw5mEfGJf-GHCo0iy9O_oWtTpHv0mw-CHA6mBda7g37OZqWeiNCamVDQJn-QY9lZ8Aj/exec')
+      .get('https://script.google.com/macros/s/AKfycby2WlBLz7LKV7JkB1ZclX8QtvD7GWae2UiCWGVgNL3-NmeLWGau41X-yu1ntDc8yDfP/exec')
       .then(
         response => {
           this.dashboard = response["data"]
@@ -106,7 +106,7 @@ export default {
       <div>
         <RouterLink v-if="!isSmall || toggled" @click="close_and_move" to="/menu">Carte</RouterLink>
       </div>
-      <div>
+      <div v-if="this.dashboard && (this.dashboard.events.length !== 0)">
         <RouterLink v-if="!isSmall || toggled" @click="close_and_move" to="/events">Evènements</RouterLink>
       </div>
       <div>
