@@ -18,8 +18,4 @@ export default {
   </main>
 </template>
 
-<style>
-a {
-  cursor: inherit;
-}
-</style>
+<style></style>
