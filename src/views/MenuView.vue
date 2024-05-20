@@ -16,7 +16,10 @@ export default {
         </thead>
         <tbody>
           <tr v-for="content in submenu.content">
-            <td v-for="(cell, id) in content" :class="{ 'table-right': id != 0 }">{{ cell }}</td>
+            <td v-for="(cell, id) in content" :class="{ 'table-right': id != 0 }">
+              <span v-if="cell[0] !== '#'">{{ cell }}</span>
+              <span v-else class="table-title"><br>{{ cell.slice(1) }}</span>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -27,5 +30,11 @@ export default {
 <style>
 .table-right {
   text-align: right;
+}
+
+.table-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.2em;
+  margin-top: 1em;
 }
 </style>
