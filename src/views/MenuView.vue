@@ -8,7 +8,8 @@ export default {
 
 <template>
   <main>
-    <PictureText v-for="(submenu, index) in this.$root.dashboard.menu" :is_left="index % 2 == 0">
+    <PictureText v-for="(submenu, index) in this.$root.dashboard.menu" :is_left="index % 2 == 0"
+      :picture="submenu.link">
       <h2>{{ submenu.category }}</h2>
       <table>
         <thead>

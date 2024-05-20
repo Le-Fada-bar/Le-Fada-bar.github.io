@@ -25,7 +25,7 @@ export default {
     </div>
   </div>
   <main id="main">
-    <PictureText>
+    <PictureText picture="Devanture.jpg">
       <h2>Cave à copain <br> Bar à manger</h2>
       <p>À l’affût d’un nouveau cadre pour partager de bons moments avec vos invités dans le 1 er arrondissement de
         Paris ? Faites un détour au FADA. Auprès de cet établissement atypique, tout a été pensé pour vous accueillir
@@ -33,7 +33,7 @@ export default {
         méditerranéenne au cœur de la capitale.
       </p>
     </PictureText>
-    <PictureText :is_left="false">
+    <PictureText :is_left="false" picture="Lampe.jpg">
       <h2>Concept</h2>
       <p>Le Fada est bel et bien un bar de copains ! Les anciens élèves de l'École des Mines de Saint-Étienne se sont
         associés pour créer un lieu d'accueil chaleureux ouvert à tous. Central et accessible, l'objectif est de réunir
