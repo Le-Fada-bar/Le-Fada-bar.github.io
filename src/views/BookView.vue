@@ -10,13 +10,13 @@ export default {
 <template>
   <div class="button-picture">
     <div>
-      <WordCarousel />
       <div class="book-button">
         <a href="#"><button>Réserver</button></a>
       </div>
     </div>
   </div>
   <main>
+    <WordCarousel />
     <Contact></Contact>
   </main>
 </template>

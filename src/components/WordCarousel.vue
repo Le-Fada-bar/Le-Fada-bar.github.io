@@ -20,7 +20,7 @@
 .carousels {
   display: flex;
   flex-direction: row;
-  color: var(--theme-white);
+  color: var(--theme-black);
 }
 
 .carousel {
