@@ -9,7 +9,7 @@ export default {
 
 <template>
   <main>
-    <PictureText picture="barmen.jpg">
+    <PictureText picture="JP.jpg">
       <h2>Nous contacter</h2>
       <LogoLink address="telto:+33612345678" logo="phone">+33 6 12 34 56 78
       </LogoLink>
