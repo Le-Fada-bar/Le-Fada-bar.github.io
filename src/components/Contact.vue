@@ -34,5 +34,6 @@ export default {
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 100%;
+  object-fit: cover;
 }
 </style>
