@@ -1,9 +1,5 @@
-<script>
+<script setup>
 import PictureText from '../components/PictureText.vue'
-
-export default {
-  components: { PictureText }
-}
 </script>
 
 <template>

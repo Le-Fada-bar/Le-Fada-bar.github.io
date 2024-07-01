@@ -1,17 +1,13 @@
-<script>
+<script setup>
 import Contact from '../components/Contact.vue'
 import WordCarousel from '../components/WordCarousel.vue'
-
-export default {
-  components: { Contact, WordCarousel }
-}
 </script>
 
 <template>
   <div class="button-picture">
     <div>
       <div class="book-button">
-        <a href="#"><button>Réserver</button></a>
+        <a href="https://www.privateaser.com/lieu/38031-fada"><button>Réserver</button></a>
       </div>
     </div>
   </div>

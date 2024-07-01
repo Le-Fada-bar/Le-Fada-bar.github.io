@@ -1,10 +1,6 @@
-<script>
+<script setup>
 import PictureText from '../components/PictureText.vue'
 import LogoLink from '../components/LogoLink.vue'
-
-export default {
-  components: { PictureText, LogoLink }
-}
 </script>
 
 <template>

@@ -5,7 +5,7 @@ export default {
   components: { PictureText },
   methods: {
     scrollTo() {
-      var scrollDiv = document.getElementById("main").offsetTop - 50;
+      const scrollDiv = document.getElementById("main").offsetTop - 50;
       window.scrollTo({ top: scrollDiv, behavior: 'smooth' });
     }
   }

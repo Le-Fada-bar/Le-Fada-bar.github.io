@@ -1,8 +1,16 @@
 <template>
   <footer>
     <div>
-      <div><img width="25px" src="/icons/instagram.svg"></div>
-      <div style="padding-left: .5em"><img width="25px" src="/icons/privateaser.svg"></div>
+      <div>
+		  <a href="https://www.instagram.com/fadabar/" target="_blank">
+			  <img width="25px" alt="Instagram" src="/icons/instagram.svg" />
+		  </a>
+	  </div>
+      <div style="padding-left: .5em">
+		  <a href="https://www.privateaser.com/lieu/38031-fada" target="_blank">
+			  <img width="25px" alt="Privateaser" src="/icons/privateaser.svg" />
+		  </a>
+	  </div>
     </div>
     <div class="copyright">© BAMSE, 2024 </div>
   </footer>

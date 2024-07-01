@@ -1,22 +1,19 @@
-<script>
+<script setup>
 
-export default {
-  props: {
-    picture: {
-      type: String,
-      default: "/fada.jpg"
-    },
-    maps: {
-      type: Boolean,
-      default: false
-    },
-    is_left: {
-      type: Boolean,
-      default: true
-    }
-  }
-}
-
+const props = defineProps({
+	picture: {
+		type: String,
+		default: "/fada.jpg"
+	},
+	maps: {
+		type: Boolean,
+		default: false
+	},
+	is_left: {
+		type: Boolean,
+		default: true
+	}
+});
 </script>
 
 <template>
