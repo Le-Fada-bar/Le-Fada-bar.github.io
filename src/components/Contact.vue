@@ -1,19 +1,15 @@
-<script>
+<script setup>
 import LogoLink from '../components/LogoLink.vue'
-
-export default {
-  components: { LogoLink }
-}
 </script>
 
 <template>
   <div class="contact">
     <div>
       <h2>Appelez Paul</h2>
-      <LogoLink address="telto:+33612345678" logo="phone" :is_white="false">+33 6 12 34 56 78</LogoLink>
+      <LogoLink address="telto:+33756872078" logo="phone" :is_white="false">+33 7 56 87 20 78</LogoLink>
     </div>
     <div class="round-picture">
-      <img class="" alt="Paul" src="/paul.jpg">
+      <img alt="Paul" src="/paul.jpg">
     </div>
   </div>
 </template>

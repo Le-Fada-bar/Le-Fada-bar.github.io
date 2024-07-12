@@ -1,4 +1,6 @@
 <script setup>
+import { defineProps } from "vue";
+
 const props = defineProps({
 	displayed: {
 		type: String
@@ -19,7 +21,7 @@ const props = defineProps({
 
 <template>
 	<div class="logo"><a :href="address"><img style="height: 1em; margin-right: 0.5em"
-			:src="'/icons/' + logo + (is_white ? '_white' : '') + '.svg'" alt="">
+			:src="'/icons/' + logo + (is_white ? '_white' : '') + '.svg'" alt="Logo du Fada">
 		<slot></slot>
 	</a></div>
 

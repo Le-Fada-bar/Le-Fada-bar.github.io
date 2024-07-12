@@ -1,5 +1,6 @@
 <script setup>
 import Footer from './Footer.vue'
+import { defineProps } from "vue";
 
 const props = defineProps({
 	visible: {
