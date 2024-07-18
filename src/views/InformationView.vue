@@ -1,17 +1,20 @@
 <script setup>
 import PictureText from '../components/PictureText.vue'
 import LogoLink from '../components/LogoLink.vue'
+import { inject } from "vue";
+
+const dashboard = inject("dashboard").value;
 </script>
 
 <template>
 	<main>
-		<PictureText v-if="this.$root.dashboard">
+		<PictureText v-if="dashboard">
 			<h2>Horaires</h2>
-			<p v-if="this.$root.dashboard.opening.message"><strong>{{ this.$root.dashboard.opening.message }}</strong>
+			<p v-if="dashboard.opening.message"><strong>{{ dashboard.opening.message }}</strong>
 			</p>
 			<table>
 				<tbody>
-				<tr v-for="time in this.$root.dashboard.opening.times">
+				<tr v-for="time in dashboard.opening.times">
 					<td>{{ time[0] }}</td>
 					<td class="table-right">{{ time[1] }} - {{ time[2] }}</td>
 				</tr>

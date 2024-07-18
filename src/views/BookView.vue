@@ -50,6 +50,7 @@ import WordCarousel from '../components/WordCarousel.vue'
 	justify-content: center;
 	align-items: flex-end;
 	background-image: url('/salle_etage.jpg');
+	min-height: 20vh;
 }
 
 .button-picture > div {
