@@ -23,7 +23,7 @@ const scrollTo = () => {
 		<PictureText picture="devanture_bar.jpg" alt="Devanture du Fada">
 			<h2>Cave à copain <br> Bar à manger</h2>
 			<p>À l’affût d’un nouveau cadre pour partager de bons moments avec vos invités dans le 1<sup>er</sup> arrondissement
-				de Paris ? Faites un détour au FADA. Auprès de cet établissement atypique, tout a été pensé pour vous
+				de Paris ? Faites un détour au Fada. Auprès de cet établissement atypique, tout a été pensé pour vous
 				accueillir dans une atmosphère conviviale. Installé rue Jean-Jacques Rousseau, ce bar vous plongera
 				dans une ambiance méditerranéenne au cœur de la capitale.
 			</p>
