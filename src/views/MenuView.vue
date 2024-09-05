@@ -7,6 +7,9 @@ const dashboard = inject("dashboard").value;
 
 <template>
 	<main>
+		<div class="title-wrp">
+			<h1>Découvrez notre carte</h1>
+		</div>
 		<PictureText v-for="(submenu, index) in dashboard.menu" :is_left="index % 2 == 0"
 					 :picture="submenu.link">
 			<h2>{{ submenu.category }}</h2>

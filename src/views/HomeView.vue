@@ -9,7 +9,8 @@ const scrollTo = () => {
 
 <template>
 	<video autoplay loop muted>
-		<source src="/intro.mp4"/>
+		<source src="/intro.mp4" type="video/mp4"/>
+		<p>Vidéo de présentation du Fada</p>
 	</video>
 	<div @click="scrollTo" class="discover">
 		<button>Découvrir</button>
@@ -20,8 +21,11 @@ const scrollTo = () => {
 		</div>
 	</div>
 	<main id="main">
+		<div class="title-wrp">
+			<h1>Le Fada</h1>
+		</div>
 		<PictureText picture="devanture_bar.jpg" alt="Devanture du Fada">
-			<h2>Cave à copain <br> Bar à manger</h2>
+			<h2>Cave à copain <br /> Bar à manger</h2>
 			<p>À l’affût d’un nouveau cadre pour partager de bons moments avec vos invités dans le 1<sup>er</sup> arrondissement
 				de Paris ? Faites un détour au Fada. Auprès de cet établissement atypique, tout a été pensé pour vous
 				accueillir dans une atmosphère conviviale. Installé rue Jean-Jacques Rousseau, ce bar vous plongera

@@ -13,7 +13,7 @@ const props = defineProps({
 <template>
 	<!-- Inspired by https://codepen.io/madebygus/pen/ygwxwz -->
 	<div class="waiting" :style="'visibility: ' + (props.visible ? 'visible' : 'hidden')">
-		<h2>Fada</h2>
+		<h1>Fada</h1>
 		<div class="animation">
 			<div class="glass">
 				<div class="air"></div>

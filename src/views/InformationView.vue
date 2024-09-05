@@ -8,6 +8,9 @@ const dashboard = inject("dashboard").value;
 
 <template>
 	<main>
+		<div class="title-wrp">
+			<h1>Informations pratiques</h1>
+		</div>
 		<PictureText v-if="dashboard">
 			<h2>Horaires</h2>
 			<p v-if="dashboard.opening.message"><strong>{{ dashboard.opening.message }}</strong>
