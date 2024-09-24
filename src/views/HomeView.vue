@@ -9,7 +9,8 @@ const scrollTo = () => {
 
 <template>
 	<video autoplay loop muted>
-		<source src="/intro.mp4" type="video/mp4"/>
+		<source src="/intro.mp4" type="video/mp4" />
+		<source src="/intro.webm" type="video/webm" />
 		<p>Vidéo de présentation du Fada</p>
 	</video>
 	<div @click="scrollTo" class="discover">
@@ -36,7 +37,7 @@ const scrollTo = () => {
 			<h2>Concept</h2>
 			<p>Le Fada est bel et bien un bar de copains ! Les anciens élèves de l'École des Mines de Saint-Étienne se
 				sont associés pour créer un lieu d'accueil chaleureux ouvert à tous. Central et accessible, le bar
-				souhaite réunir les anciens élèves de l'École et, bien sûr, tous les bons vivants autour d'un verre.
+				souhaite réunir tous les bons vivants autour d'un verre.
 				À très bientôt au Fada !
 			</p>
 		</PictureText>

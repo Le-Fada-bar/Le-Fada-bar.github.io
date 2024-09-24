@@ -46,24 +46,22 @@ import WordCarousel from '../components/WordCarousel.vue'
 	width: 100%;
 	background-size: cover;
 	background-position: center;
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
 	background-image: url('/salle_etage.jpg');
-	min-height: 20vh;
+	position: relative;
+	aspect-ratio: 1.8;
 }
 
 .button-picture > div {
+	position: absolute;
+	bottom: 1.2rem;
+	margin: auto;
+	display: inline-block;
 	width: 100%;
 }
 
 @media only screen and (min-width: 700px) {
 	.button-picture {
 		aspect-ratio: 4;
-	}
-
-	.button-picture > div {
-		width: 100%;
 	}
 }
 </style>
