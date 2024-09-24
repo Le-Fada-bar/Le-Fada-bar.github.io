@@ -8,7 +8,7 @@ const scrollTo = () => {
 </script>
 
 <template>
-	<video autoplay loop muted>
+	<video playsinline autoplay loop muted preload="metadata">
 		<source src="/intro.mp4" type="video/mp4" />
 		<source src="/intro.webm" type="video/webm" />
 		<p>Vidéo de présentation du Fada</p>
@@ -16,7 +16,7 @@ const scrollTo = () => {
 	<div @click="scrollTo" class="discover">
 		<button>Découvrir</button>
 		<div>
-			<svg width="100%" height="1em" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg">
+			<svg width="100%" height="1em" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
 				<path style="fill:none;stroke:var(--theme-white);stroke-opacity:1" d="M 0,7 5,10 10,7"/>
 			</svg>
 		</div>
