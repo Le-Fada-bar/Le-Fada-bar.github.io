@@ -25,6 +25,7 @@ import WordCarousel from '../components/WordCarousel.vue'
 	font-weight: 700;
 	display: flex;
 	justify-content: center;
+	z-index: 999;
 }
 
 .book-button > a > button {
@@ -48,12 +49,12 @@ import WordCarousel from '../components/WordCarousel.vue'
 	background-position: center;
 	background-image: url('/salle_etage.jpg');
 	position: relative;
-	aspect-ratio: 1.8;
+	aspect-ratio: 1.3;
 }
 
 .button-picture > div {
 	position: absolute;
-	bottom: 1.2rem;
+	bottom: 1rem;
 	margin: auto;
 	display: inline-block;
 	width: 100%;

@@ -9,7 +9,7 @@ import LogoLink from '../components/LogoLink.vue'
       <h2>Nous contacter</h2>
       <LogoLink address="telto:+33756872078" logo="phone">+33 7 56 87 20 78</LogoLink>
       <LogoLink address="https://maps.app.goo.gl/eBKBerbVwWXnuEybA" logo="maps">64 Rue Jean-Jacques Rousseau</LogoLink>
-      <LogoLink address="#" logo="mail">fada.bar@gmail.com</LogoLink>
+      <LogoLink address="mailto:resafadaparis@gmail.com" logo="mail">resafadaparis@gmail.com</LogoLink>
     </PictureText>
   </main>
 </template>
