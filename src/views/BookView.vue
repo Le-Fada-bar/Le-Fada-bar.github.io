@@ -5,12 +5,10 @@ import WordCarousel from '../components/WordCarousel.vue'
 
 <template>
 	<div class="button-picture">
-		<div>
-			<div class="book-button">
-				<a href="https://book.bookingshake.com/2LLFJ11XUmtJPADPyt7m?medium=sw" target="_blank">
-					<button>Réserver</button>
-				</a>
-			</div>
+		<div class="book-button">
+			<a href="https://book.bookingshake.com/2LLFJ11XUmtJPADPyt7m?medium=sw" target="_blank">
+				<button>Réserver</button>
+			</a>
 		</div>
 	</div>
 	<main>
@@ -20,12 +18,23 @@ import WordCarousel from '../components/WordCarousel.vue'
 </template>
 
 <style>
+.button-picture {
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-image: url('/salle_etage.jpg');
+	position: relative;
+	height: 50vh;
+}
+
 .book-button {
 	width: 100%;
 	font-weight: 700;
 	display: flex;
 	justify-content: center;
 	z-index: 999;
+	position: absolute;
+	bottom: 1rem;
 }
 
 .book-button > a > button {
@@ -43,26 +52,4 @@ import WordCarousel from '../components/WordCarousel.vue'
 	color: var(--theme-black);
 }
 
-.button-picture {
-	width: 100%;
-	background-size: cover;
-	background-position: center;
-	background-image: url('/salle_etage.jpg');
-	position: relative;
-	aspect-ratio: 1.3;
-}
-
-.button-picture > div {
-	position: absolute;
-	bottom: 1rem;
-	margin: auto;
-	display: inline-block;
-	width: 100%;
-}
-
-@media only screen and (min-width: 700px) {
-	.button-picture {
-		aspect-ratio: 4;
-	}
-}
 </style>
