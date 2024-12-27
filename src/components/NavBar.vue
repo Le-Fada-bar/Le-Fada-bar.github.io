@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink } from "vue-router";
-import { defineProps, computed, ref } from "vue";
+import {defineProps, computed, ref} from "vue";
 
 const props = defineProps({
 	toggle: Function,
@@ -13,8 +13,8 @@ const props = defineProps({
 
 const dashboardRef = ref(props.dashboard);
 const dashboardCondition = computed(() => {
-	if (dashboardRef && Object.hasOwn(dashboardRef, 'events')) {
-		return dashboardRef.events.length !== 0;
+	if (dashboardRef && Object.hasOwn(dashboardRef.value, 'events')) {
+		return dashboardRef.value.events.length !== 0;
 	}
 	return false;
 });

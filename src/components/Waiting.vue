@@ -27,7 +27,7 @@ const props = defineProps({
 <style>
 .waiting {
 	position: fixed;
-	z-index: 99;
+	z-index: 999;
 	height: 100vh;
 	width: 100vw;
 	background-color: var(--theme-white);
