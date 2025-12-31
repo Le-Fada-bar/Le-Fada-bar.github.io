@@ -6,7 +6,7 @@ import WordCarousel from '../components/WordCarousel.vue'
 <template>
 	<div class="button-picture">
 		<div class="book-button">
-			<a href="https://book.bookingshake.com/2LLFJ11XUmtJPADPyt7m?medium=sw" target="_blank">
+			<a href=" https://prvt.re/ADH1uq" target="_blank">
 				<button>Réserver</button>
 			</a>
 		</div>
