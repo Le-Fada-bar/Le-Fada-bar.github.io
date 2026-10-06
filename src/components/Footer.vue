@@ -2,12 +2,12 @@
 	<footer>
 		<div>
 			<div>
-				<a href="https://www.instagram.com/fadabar/" target="_blank">
+								<a href="https://www.instagram.com/fadabar/" target="_blank" rel="noopener noreferrer">
 					<img width="25px" alt="Instagram" src="/icons/instagram.svg"/>
 				</a>
 			</div>
 			<div style="padding-left: .5em">
-				<a href="https://www.privateaser.com/lieu/38031-fada" target="_blank">
+								<a href="https://www.privateaser.com/lieu/38031-fada" target="_blank" rel="noopener noreferrer">
 					<img width="25px" alt="Privateaser" src="/icons/privateaser.svg"/>
 				</a>
 			</div>

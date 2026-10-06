@@ -42,6 +42,9 @@ const dashboardCondition = computed(() => {
 				<RouterLink v-if="!isSmall || toggled" @click="close_and_move" to="/contact">Contact</RouterLink>
 			</div>
 			<div>
+				<RouterLink v-if="!isSmall || toggled" @click="close_and_move" to="/entreprises">Entreprises</RouterLink>
+			</div>
+			<div>
 				<RouterLink v-if="!isSmall || toggled" @click="close_and_move" to="/information">Informations</RouterLink>
 			</div>
 		</nav>

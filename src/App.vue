@@ -13,6 +13,7 @@ import NavBar from "@/components/NavBar.vue";
 
 const state = reactive({
 	loaded: false,
+	dashboardError: false,
 	toggled: false,
 	isSmall: true,
 	menu_height: "3.5em",
@@ -31,18 +32,30 @@ const dashboardRef = ref(state.dashboard);
 provide('dashboard', dashboardRef);
 
 /**********************
+ *       DATA         *
+ **********************/
+const loadDashboard = async () => {
+	state.loaded = false;
+	state.dashboardError = false;
+
+	try {
+		const response = await axios.get('https://script.google.com/macros/s/AKfycbw2WXY65EGloNKna0DDHT6EmgulHZ3pRAktWunLAC3BPdsEo-lhkV76yXaM0xpnvnJG/exec', { timeout: 10000 });
+		const data = response.data || {};
+		state.dashboard.events = Array.isArray(data.events) ? data.events : [];
+		state.dashboard.menu = Array.isArray(data.menu) ? data.menu : [];
+		state.dashboard.opening = data.opening && typeof data.opening === 'object' ? data.opening : {};
+	} catch {
+		state.dashboardError = true;
+	} finally {
+		state.loaded = true;
+	}
+};
+
+/**********************
  *       EVENTS       *
  **********************/
 onMounted(() => {
-	axios
-		.get('https://script.google.com/macros/s/AKfycbw2WXY65EGloNKna0DDHT6EmgulHZ3pRAktWunLAC3BPdsEo-lhkV76yXaM0xpnvnJG/exec')
-		.then(
-			response => {
-				state.dashboard.events = response.data.events;
-				state.dashboard.menu = response.data.menu;
-				state.dashboard.opening = response.data.opening;
-				state.loaded = true;
-			});
+	loadDashboard();
 	onResize();
 	window.addEventListener('scroll', onScroll);
 	window.addEventListener('resize', onResize);
@@ -119,6 +132,10 @@ const onResize = () => {
 		<Footer v-if="state.toggled"/>
 	</header>
 	<div class="container">
+		<div v-if="state.dashboardError" class="dashboard-error" role="alert">
+			<span>Le contenu dynamique n'a pas pu être chargé.</span>
+			<button type="button" @click="loadDashboard">Réessayer</button>
+		</div>
 		<RouterView/>
 		<Footer/>
 	</div>
@@ -142,5 +159,23 @@ header {
 	flex-direction: column;
 }
 
+.dashboard-error {
+	margin: 4.5rem 1rem 0;
+	padding: 0.75rem 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	background: var(--theme-black);
+	color: var(--theme-white);
+	text-align: center;
+}
+
+.dashboard-error button {
+	color: inherit;
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+}
 
 </style>

@@ -6,7 +6,7 @@ import LogoLink from '../components/LogoLink.vue'
   <div class="contact">
     <div>
       <h2>Appelez Paul</h2>
-      <LogoLink address="telto:+33756872078" logo="phone" :is_white="false">+33 7 56 87 20 78</LogoLink>
+      <LogoLink address="tel:+33756872078" logo="phone" :is_white="false">+33 7 56 87 20 78</LogoLink>
     </div>
     <div class="round-picture">
       <img alt="Paul" src="/paul.jpg">

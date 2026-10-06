@@ -30,16 +30,16 @@ const dashboard = inject("dashboard").value;
 			</LogoLink>
 			<LogoLink address="https://maps.app.goo.gl/eBKBerbVwWXnuEybA" logo="maps" :is_white="false">75001, Paris
 			</LogoLink>
-			<LogoLink address="#" logo="ratp">Châtelet
+						<LogoLink logo="ratp">Châtelet
 				<img class="metro" src="/ratp/1.svg" alt="Métro ligne 1" />
 				<img class="metro" src="/ratp/7.svg" alt="Métro ligne 7" />
 				<img class="metro" src="/ratp/11.svg" alt="Métro ligne 11" />
 				<img class="metro" src="/ratp/14.svg" alt="Métro ligne 14" />
 			</LogoLink>
-			<LogoLink address="#" logo="ratp" :is_white="false">Les Halles
+						<LogoLink logo="ratp" :is_white="false">Les Halles
 				<img class="metro" src="/ratp/4.svg" alt="Métro ligne 4" />
 			</LogoLink>
-			<LogoLink address="#" logo="ratp" :is_white="false">Châtelet - Les Halles
+						<LogoLink logo="ratp" :is_white="false">Châtelet - Les Halles
 				<img class="metro" src="/ratp/A.svg" alt="RER ligne A" />
 				<img class="metro" src="/ratp/B.svg" alt="RER ligne B"/>
 				<img class="metro" src="/ratp/D.svg" alt="RER ligne D"/>
